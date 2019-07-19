@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="index.js"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.common
+{
+   
+    color:white;
+   height:80px ;
+   width: 100%;
+   font-family: 'Press Start 2P', cursive;
+   font-size: 15px;
+   color: #008000;
+}
+input
+{
+    height: 30px;
+    font-size:100%;
+}
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+ /* z-index: 1;*/
+  top: 0;
+/*  overflow-x: hidden;*/
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  background-color: white;
+ 
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+button
+{
+    background-color:#008000 ;
+    z-index: 2;
+    position: absolute;
+   font-size:10px;
+   color: white;
+     font-family: 'Press Start 2P', cursive;
+     padding:5px;
+     left: 32%;
+     margin-right: 500px;
+
+}
+
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+
+<div class="split left">
+  <div class="centered">
+    <img src="p1.png" alt="Avatar woman">
+    <div class="common">
+        
+    <h2>PLAYER 1</h2>
+    <input type="text" placeholder="Enter name" id="p1">
+    <br>
+</br>
+    <button type="button" onclick=play()>Enter</button>
+    
+   </div>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+
+    <img src="p1.png" alt="Avatar man">
+    <div class="common">
+    <h2>PLAYER 2</h2>
+    <input style=" background-color: black ;color: white"type="text" placeholder="Enter name" id="p2">
+       <br>
+</br>
+    <button type="button" onclick=play()>Enter</button>
+   </div>
+  </div>
+
+</div>
+
+
+
+     
+</body>
+</html> 
